@@ -1,24 +1,24 @@
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll'
 
 const FooterMain = () => {
   const footerLinks = [
     {
-      name: "About Me",
-      section: "about",
+      name: 'About Me',
+      section: 'about',
     },
     {
-      name: "Skills",
-      section: "skills",
+      name: 'Skills',
+      section: 'skills',
     },
     {
-      name: "Experience",
-      section: "experience",
+      name: 'Experience',
+      section: 'experience',
     },
     {
-      name: "Projects",
-      section: "projects",
+      name: 'Projects',
+      section: 'projects',
     },
-  ];
+  ]
   return (
     <div className="px-4">
       <div className="w-full h-[1px] bg-lightGrey mt-24"></div>
@@ -28,26 +28,17 @@ const FooterMain = () => {
           {footerLinks.map((item, index) => {
             return (
               <li key={index}>
-                <Link
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-120}
-                  to={item.section}
-                  className="hover:text-white transition-all duration-500 cursor-pointer"
-                >
+                <Link spy={true} smooth={true} duration={500} offset={-120} to={item.section} className="hover:text-white transition-all duration-500 cursor-pointer">
                   {item.name}
                 </Link>
               </li>
-            );
+            )
           })}
         </ul>
       </div>
-      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-12 text-sm text-lightBrown">
-        © 2024 Abdelrahman | All Rights Reserved.
-      </p>
+      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-12 text-sm text-lightBrown">© 2025 Josua Limbong | All Rights Reserved.</p>
     </div>
-  );
-};
+  )
+}
 
-export default FooterMain;
+export default FooterMain
